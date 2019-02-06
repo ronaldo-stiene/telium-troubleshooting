@@ -14,7 +14,7 @@ class CreateContractTable extends Migration {
 	{
 		Schema::create('contract', function(Blueprint $table)
 		{
-			$table->integer('contract_id')->primary();
+			$table->string('contract_id',20)->primary();
 			$table->string('description', 256);
 			$table->integer('customer_id')->index('fk_contract_customer_idx');
 		});

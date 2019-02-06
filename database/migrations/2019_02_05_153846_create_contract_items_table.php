@@ -16,7 +16,7 @@ class CreateContractItemsTable extends Migration {
 		{
 			$table->integer('contract_item_id')->primary();
 			$table->string('description', 45);
-			$table->integer('contract_id')->index('fk_contract_items_contract_idx');
+			$table->string('contract_id',20)->index('fk_contract_items_contract_idx');
 		});
 	}
 
