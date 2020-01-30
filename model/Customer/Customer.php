@@ -10,6 +10,6 @@ class Customer extends Model {
 
     public function contract()
     {
-        return $this->hasOne('Model\Contract\ContractItem', 'customer_id', 'customer_id');
+        return $this->hasOne('Model\Contract\Contract', 'customer_id', 'customer_id'); // Alteração: 5
     }
 }

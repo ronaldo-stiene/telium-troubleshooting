@@ -16,7 +16,7 @@ class ViewServiceProvider extends ServiceProvider
     {
         // Using class based composers...
         View::composer(
-            'contract.home', 'App\Http\View\Composers\CurrentDateComposer'
+            'contract.show', 'App\Http\View\Composers\CurrentDateComposer' // Alteração: 7
         );
     }
 
